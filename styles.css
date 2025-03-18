@@ -1,16 +1,26 @@
-.holder {
-    display: flex;
-    justify-content: space-between; 
-    flex-wrap: wrap; 
-    padding: 10px; 
-    background-color: #f0f0f0; 
+/* General Body Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
+/* Holder Styling */
+.holder {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next row */
+  justify-content: space-between; /* Spaces items evenly, first and last touch the ends */
+  padding: 0 20px; /* Adds padding to the sides */
+}
+
+/* Item Styling */
 .item {
-    padding: 20px;
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    border-radius: 5px;
-    min-width: 100px;
+  flex: 1 1 auto; /* Allows items to grow and shrink as needed */
+  min-width: 150px; /* Minimum width for each item */
+  margin: 10px; /* Adds spacing between items */
+  padding: 20px;
+  background-color: #011e29;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensures padding is included in the width */
 }
